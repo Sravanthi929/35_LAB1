@@ -1,0 +1,30 @@
+#include <stdio.h>
+int main(){
+    float x,y;
+    int opt;
+    printf("Enter the numbers:");
+    scanf("%f %f",&x,&y);
+   printf("Enter 1 for addition\n ");
+   printf("Enter 2 for subtraction\n");
+   printf("Enter 3 for multiplication\n");
+   printf("Enter 4 for division\n");
+   scanf("%d",&opt);
+   switch(opt)
+ {  case 1:
+       printf("%f",x+y);
+       break;
+       case 2:
+       printf("%f",x-y);
+       break;
+       case 3:
+       printf("%f",x*y);
+       break;
+       case 4:
+       printf("%f",x/y);
+       break;
+       default :
+       printf("Entered wrong input");
+       break;}
+       return 0;
+
+}
